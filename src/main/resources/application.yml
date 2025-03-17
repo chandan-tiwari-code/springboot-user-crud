@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: simple-springboot-crud
+
+# Set logging level for the whole application
+logging:
+  level:
+    root: INFO
+# Set logging level for specific packages
+    com.example.demo: DEBUG
+    org.springframework: INFO
+# Change log file location
+  file.name: logs/application.log
+# Log pattern format
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
